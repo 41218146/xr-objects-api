@@ -1,0 +1,12 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "orchestrator": {
+      "description": "Tech Lead / 主代理，負責拆解需求、平行派工給 Subagent 並彙整結果",
+      "permissions": [
+        { "action": "subagent", "resource": "team/*", "effect": "allow" },
+        { "action": "subagent", "resource": "db-eval", "effect": "allow" }
+      ]
+    }
+  }
+}
